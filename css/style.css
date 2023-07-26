@@ -438,11 +438,10 @@ form .form-control:focus {
 footer {
   padding-top: 60px;
   background-color: #a36c1e;
-  height: 313px;
+
 }
 .footer-items {
   display: flex;
-  align-items: center;
   gap: 81px;
 }
 .footer-item {
@@ -494,5 +493,13 @@ footer {
 width: 100%;
 font-size: 16px;
 line-height: 2;
+    }
+
+    .footer-items{
+        column-gap: 20px;
+        row-gap: 0px;
+    }
+    .footer-item, .footer-list{
+        gap: 10px;
     }
 }
