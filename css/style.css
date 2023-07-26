@@ -28,22 +28,30 @@ textarea {
   height: 100vh;
 }
 /* nav style */
-nav{
-    padding: 60px 0px;
+.navbar{
+    padding: 60px;
 }
-.nav-items {
-  display: flex;
-  justify-content: space-between;
+
+/* Add custom colors for active li elements */
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    background-image: linear-gradient(#834906,#E5B350,#FFFFBE,#F5D36F,#774300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-weight: 700;
+  
+
+
 }
-.nav-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+
+
+.navbar-nav {
+    gap: 30px;
 }
-.nav-items li a {
+.navbar-light .navbar-nav .nav-link{
   color: #fff;
   font-weight: 500;
   font-size: 16px;
+  margin: 0;
 }
 .btn-login-reg {
   background-color: #2a282b;
@@ -209,7 +217,7 @@ height: 469px;
   padding: 60px 100px;
   background-color: #0a0a0a;
 }
-.about-us .container {
+.about-us .container ,.why-instap .container {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -472,7 +480,17 @@ footer {
 
 
 @media (max-width: 575.98px) { 
-    .why-instap,.about-us,.say-goodbye{
+    .navbar-light .navbar-toggler{
+        background: #262628;
+    }
+    .navbar-brand img{
+        width: 160px;
+        max-width: 100%;
+    }
+    .navbar{
+        padding: 16px 0;
+    }
+    .why-instap,.about-us,.say-goodbye {
         padding:60px 0px;    
     
     }
