@@ -136,3 +136,11 @@ nextArrow.addEventListener("click", () => {
     [nextSlideIndex + 1].classList.add("active");
 });
 itemDots.appendChild(nextArrow);
+
+// Set the interval between slides in milliseconds
+const slideInterval = 2000;
+
+// Set an interval to show the next slide automatically
+setInterval(() => {
+  nextArrow.click();
+}, slideInterval);
