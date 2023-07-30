@@ -25,7 +25,6 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 100vh;
 }
 /* nav style */
 .navbar{
@@ -490,6 +489,108 @@ footer {
 }
 
 
+/* payment method page */
+.payment{
+  padding: 60px 0px;
+}
+.card-order{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card-order-top{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card-order-top h1{
+  color:#E0E0E0;
+  font-size: 54px;
+  font-weight: 900;
+  font-family: 'Noto Serif JP';
+}
+.card-order-top p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Product Sans';
+}
+.form-payment{
+  background: transparent;
+  width: 100%;
+}
+.payment-input-item{
+  background: #262628;
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  padding:24px;
+  border-radius: 8px;
+  height: 74px;
+}
+.form-payment .form-control, .form-payment .form-control:focus{
+  padding: 0px;
+  height: auto;
+  background: #262628;
+}
+.form-label {
+  margin: 0;
+}
+.invalid-feedback{
+color: #9C6717;
+font-size: 14px;
+font-weight: 400;
+display: block;
+margin-left: 25px;
+}
+.upload{
+  background: #262628;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 182.33px;
+  color: #fff;
+  gap: 8px;
+  flex-direction: column;
+  border: 1px dotted #fff;
+  padding: 24px;
+}
+.upload-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.upload p {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Product Sans';
+  font-family: 400;
+  font-style: italic;
+}
+.btn-form-payment{
+  background: #D6A345;
+  border-radius: 8px;
+  padding: 17px 40px;
+  height: 74px;
+  width: 100%;
+  border: none;
+  color: #151515;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+.card-images{
+  display: flex;
+  flex-direction: column;
+  background: #262628;
+  gap: 40px;
+  padding: 40px 40px 40px 30px;
+  border-radius: 16px;
+  min-height: 676px;
+}
 @media (max-width: 575.98px) { 
     .navbar-light .navbar-toggler{
         background: #262628;
@@ -549,6 +650,9 @@ line-height: 2;
         gap: 10px;
     }
 }
+
+
+
 
 
 
