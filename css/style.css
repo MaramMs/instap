@@ -654,11 +654,14 @@ background: transparent;
 color: #D6A345;
 }
 /* payment form page style 3 step*/
-.section-pay{
+.section-pay {
+ 
+  padding-bottom: 20px;
+}
+.section-pay .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
 }
 .pay{
   background: #262628;
@@ -792,11 +795,14 @@ color: #D6A345;
   color: #fff;
 }
 /* Conratulation page style */
+.conratulation{
+  padding-bottom: 20px;
+
+}
 .conratulation .container{
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  padding-bottom: 20px;
+  align-items: center;
 }
 .conratulation-items{
 background-color: #262628;
