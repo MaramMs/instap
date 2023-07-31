@@ -577,6 +577,9 @@ margin-left: 25px;
   font-style: italic;
 }
 .btn-form-payment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #D6A345;
   border-radius: 8px;
   padding: 17px 40px;
@@ -901,6 +904,14 @@ line-height: 2;
     }
 .conratulation-items{
 min-width: 300px;
+padding: 2px;
+gap: 12px;
+}
+.conratulation-items h1 {
+  font-size: 20px;
+}
+.conratulation-items p{
+  font-size: 16px;
 }
 .modal-content{
   min-width: 300px;
@@ -918,6 +929,16 @@ min-width: 300px;
 }
 .btn-confirm{
   font-size: 16px;
+}
+form{
+  padding: 0px;
+}
+.pay{
+  max-width: 100%;
+  padding: 5px;
+}
+.pay-title h1, .total-pay{
+  font-size: 20px;
 }
     .footer-items{
         column-gap: 20px;
