@@ -27,6 +27,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  overflow-x: hidden;
 }
 /* nav style */
 .navbar{
@@ -402,6 +403,11 @@ form {
   font-weight: 400;
   font-size: 14px;
   font-family: "Product Sans";
+}
+.contact-us form .form-control,.contact-us form .form-control:focus{
+  background: #101010;
+  height: 54px;
+  padding: 17px 16px;
 }
 form .form-control,
 form .form-control:focus {
