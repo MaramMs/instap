@@ -12,7 +12,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+body{
+  overflow-x: hidden;
+}
 p {
   margin: 0;
 }
@@ -490,13 +492,12 @@ footer {
 /* payment method page */
 .payment{
   padding: 60px 0px;
-  min-height: 676px;
 }
+
 .card-order{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 676px;
 }
 .card-order-top{
   display: flex;
@@ -638,6 +639,7 @@ margin-left: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   width: 100%;
   background: #D6A345;
   padding: 17px 40px;
@@ -893,6 +895,23 @@ line-height: 2;
     }
 .conratulation-items{
 min-width: 300px;
+}
+.modal-content{
+  min-width: 300px;
+  min-height: 265px;
+}
+.modal-content .modal-body img{
+  max-width: 100%;
+}
+.modal-header h5{
+  font-size: 20px;
+}
+.modal-header p {
+  font-size: 16px;
+  text-align: center;
+}
+.btn-confirm{
+  font-size: 16px;
 }
     .footer-items{
         column-gap: 20px;
