@@ -56,105 +56,144 @@
 
 
         <main>
-<section class="payment">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-12 col-md-6">
-      <div class="card-order">
-        <div class="card-order-top">
-            <h1>Order Your Card!</h1>
-            <p>Add your basic information to get your card ready!</p>
 
-        </div>
-
-        <form class="form-payment">
-            <div class="mb-3">
-                <div class="payment-input-item">
-                    <label for="validationServer01" class="form-label">Full Name</label>
-                    <input type="text" class="form-control is-invalid" id="validationServer01" value="Maram" required>
-                </div>
-                <div class="invalid-feedback">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.75 5.58325H7.25V4.08325H8.75M8.75 11.5833H7.25V7.08325H8.75M8 0.333252C7.01509 0.333252 6.03982 0.527245 5.12987 0.904155C4.21993 1.28107 3.39314 1.83351 2.6967 2.52995C1.29018 3.93647 0.5 5.84413 0.5 7.83325C0.5 9.82238 1.29018 11.73 2.6967 13.1366C3.39314 13.833 4.21993 14.3854 5.12987 14.7623C6.03982 15.1393 7.01509 15.3333 8 15.3333C9.98912 15.3333 11.8968 14.5431 13.3033 13.1366C14.7098 11.73 15.5 9.82238 15.5 7.83325C15.5 6.84834 15.306 5.87307 14.9291 4.96313C14.5522 4.05318 13.9997 3.22639 13.3033 2.52995C12.6069 1.83351 11.7801 1.28107 10.8701 0.904155C9.96018 0.527245 8.98491 0.333252 8 0.333252Z" fill="#9C6717"/>
+<section class="section-pay">
+<div class="container">
+    <div class="pay">
+        <div class="pay-top">
+            <div class="pay-title">
+                <div class="arrow">
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00846 0.638135C5.52579 0.424135 6.10312 0.253469 6.45779 0.609469C6.75379 0.906802 6.92246 2.05814 6.96579 3.3328H12.4498C12.8185 3.3328 13.1165 3.6308 13.1165 3.99947C13.1165 4.36814 12.8185 4.66614 12.4498 4.66614H6.96512C6.92179 5.93814 6.75312 7.08547 6.45712 7.38147C6.30112 7.53747 6.10312 7.59614 5.88779 7.59614C5.58579 7.59614 5.25112 7.48013 4.95846 7.3588C3.91112 6.92547 0.883788 5.0948 0.883788 3.9948C0.883788 2.85947 4.04846 1.03614 5.00846 0.638135Z" fill="white"/>
                         </svg>
                         
-                    This name cannot be changed after order confirmation!
+                        
                 </div>
-                  
-                
-               
-             
-            </div>
-            <div class="mb-3">
-                <div class="payment-input-item">
-                    <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-              
-              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-            </div>
-
-            <div class="mb-3 upload">
-                <div class="upload-img">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5C0 5.51088 0.790177 3.60322 2.1967 2.1967C3.60322 0.790177 5.51088 0 7.5 0H42.5C44.4891 0 46.3968 0.790177 47.8033 2.1967C49.2098 3.60322 50 5.51088 50 7.5V23.75C49.9998 23.9609 49.9729 24.1709 49.92 24.375C49.9729 24.5791 49.9998 24.7891 50 25V42.5C50 44.4891 49.2098 46.3968 47.8033 47.8033C46.3968 49.2098 44.4891 50 42.5 50H7.5C5.51088 50 3.60322 49.2098 2.1967 47.8033C0.790177 46.3968 0 44.4891 0 42.5V35C0.000200739 34.7891 0.027081 34.5791 0.0800002 34.375C0.0271336 34.1709 0.000254203 33.9609 0 33.75V7.5ZM7.485 32.075C6.615 32.09 5.785 32.13 5 32.19V7.5C5 6.83696 5.26339 6.20107 5.73223 5.73223C6.20107 5.26339 6.83696 5 7.5 5H42.5C43.163 5 43.7989 5.26339 44.2678 5.73223C44.7366 6.20107 45 6.83696 45 7.5V22.54C34.2575 22.8875 26.5 25.475 21.05 29.0975C23.115 29.83 25.425 30.8725 27.69 32.2375C31.1875 34.3375 34.7425 37.2875 37.135 41.195C37.3064 41.475 37.4209 41.7861 37.4721 42.1104C37.5232 42.4347 37.51 42.7659 37.4332 43.0851C37.3563 43.4043 37.2174 43.7053 37.0242 43.9708C36.8311 44.2363 36.5875 44.4611 36.3075 44.6325C36.0275 44.8039 35.7164 44.9184 35.3921 44.9696C35.0678 45.0207 34.7366 45.0075 34.4174 44.9307C34.0982 44.8538 33.7972 44.7149 33.5317 44.5217C33.2662 44.3286 33.0414 44.085 32.87 43.805C31.03 40.7975 28.175 38.36 25.115 36.5225C22.06 34.6875 18.9525 33.5425 16.7975 33.0425C13.7618 32.3492 10.6534 32.0252 7.54 32.0775H7.485V32.075ZM12.445 11.22C13.5593 10.4349 14.8869 10.0092 16.25 10C17.275 10 18.7575 10.2875 20.055 11.22C21.48 12.245 22.5 13.935 22.5 16.25C22.5 18.565 21.48 20.2525 20.055 21.2775C18.941 22.0635 17.6133 22.49 16.25 22.5C15.225 22.5 13.7425 22.2125 12.445 21.2775C11.02 20.2525 10 18.5675 10 16.25C10 13.935 11.02 12.2475 12.445 11.22Z" fill="white"/>
-                        </svg>
-                      <span>Click to Add Your Custom Logo</span>  
-                </div>
-
-                <p>It is preferable that the logo be transparent and in PNG format We support jpeg, png, svg</p>
-            </div>
-          
-          </form>
         
-          <button class="btn-form-payment" id="openModalBtn"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-          
-                
-            Continue to Payment
-            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.5 11.7256C4.5 11.3459 4.78215 11.0321 5.14823 10.9824L5.25 10.9756H20.25C20.6642 10.9756 21 11.3114 21 11.7256C21 12.1053 20.7178 12.4191 20.3518 12.4687L20.25 12.4756L5.25 12.4756C4.83579 12.4756 4.5 12.1398 4.5 11.7256Z" fill="#151515" stroke="#151515"/>
-                <path d="M13.671 6.23271C13.3775 5.94045 13.3765 5.46558 13.6687 5.17206C13.9344 4.90522 14.351 4.88012 14.6451 5.09734L14.7294 5.16977L20.7794 11.1938C21.047 11.4603 21.0714 11.8784 20.8524 12.1724L20.7794 12.2567L14.7294 18.2817C14.4359 18.574 13.9611 18.573 13.6688 18.2795C13.4031 18.0127 13.3797 17.5959 13.5982 17.3028L13.671 17.2188L19.187 11.7249L13.671 6.23271Z" fill="#151515" stroke="#151515"/>
+                <h1>payment</h1>
+            </div>
+        
+            <p class="total-pay">$50</p>
+        </div>
+        
+        <form action="" class="form-pay">
+        <h2 class="form-pay-title">Payment Details</h2>
+        <div class="credit-visa bg-form">
+           <div class="credit">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" rx="15" fill="#D6A345"/>
+                <rect x="7" y="7" width="16" height="16" rx="8" fill="#9A6D1B"/>
                 </svg>
-        </button>
-      </div>
+                <p>Credit Card</p>
+                
+           </div> 
+           <div class="visa">
+            <svg width="101" height="24" viewBox="0 0 101 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.3801 19.7333H17.3558L19.8709 4.2762H23.8956L21.3801 19.7333ZM13.9703 4.2762L10.1337 14.9077L9.67972 12.6183L9.68013 12.6192L8.32602 5.66793C8.32602 5.66793 8.16228 4.2762 6.41703 4.2762H0.0744245L0 4.53792C0 4.53792 1.93958 4.94147 4.20952 6.30467L7.70582 19.7337H11.8988L18.3014 4.2762H13.9703ZM45.6234 19.7333H49.3185L46.0968 4.27578H42.8618C41.368 4.27578 41.0041 5.42771 41.0041 5.42771L35.0022 19.7333H39.1972L40.0362 17.4373H45.152L45.6234 19.7333ZM41.1951 14.2656L43.3096 8.48117L44.4991 14.2656H41.1951ZM35.3168 7.99328L35.8911 4.67395C35.8911 4.67395 34.119 4 32.2716 4C30.2746 4 25.5321 4.87283 25.5321 9.11709C25.5321 13.1104 31.0982 13.16 31.0982 15.2575C31.0982 17.355 26.1056 16.9792 24.4579 15.6565L23.8596 19.1272C23.8596 19.1272 25.6566 20 28.402 20C31.1482 20 35.2912 18.5781 35.2912 14.708C35.2912 10.6891 29.6751 10.3149 29.6751 8.56759C29.6755 6.81986 33.5947 7.04437 35.3168 7.99328Z" fill="white"/>
+                <path d="M87.9731 3.3291H78.3171V20.6751H87.9731V3.3291Z" fill="#FF5A00"/>
+                <path d="M78.9598 12C78.9598 8.47578 80.6168 5.34793 83.1593 3.32697C81.2881 1.85588 78.9277 0.966797 76.353 0.966797C70.2537 0.966797 65.3186 5.90137 65.3186 12C65.3186 18.0986 70.2537 23.0331 76.353 23.0331C78.9277 23.0331 81.2881 22.1441 83.1593 20.673C80.6132 18.6806 78.9598 15.5242 78.9598 12Z" fill="#EB001B"/>
+                <path d="M101 12C101 18.0986 96.0648 23.0331 89.9655 23.0331C87.3908 23.0331 85.0304 22.1441 83.1592 20.673C85.7339 18.6484 87.3587 15.5242 87.3587 12C87.3587 8.47578 85.7017 5.34793 83.1592 3.32697C85.0268 1.85588 87.3872 0.966797 89.9619 0.966797C96.0648 0.966797 101 5.93351 101 12Z" fill="#F79E1B"/>
+                </svg>
+                
+            
+           </div>
+        </div>
+        
+        <div class="input-pay bg-form">
+            <label>Card Holder Name</label>
+            <input type="text" class="form-control">
+        </div>
+        
+        <div class="user-details">
+            <div class="input-pay bg-form">
+        <label >Expiry Date</label>
+        <input type="text" class="form-control">
             </div>
-
-            <div class="col-12 col-md-6">
-<div class="card-images">
-    <img src="./images/payment-img-1.png" alt="">
-    <img src="./images/paymment-img-2.png" alt="">
-</div>
+        <div class="input-pay bg-form">
+        <label >CVV</label>
+        <input type="text" class="form-control">
+        </div>
+        </div>
+        
+        
+        <div class="paypal">
+            <div class="pay-pal">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        PayPal
+                    </label>
+                  </div>
+        
+                 
             </div>
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.1135 7.63519C23.4731 5.29053 23.1135 3.72742 21.8549 2.28455C20.4764 0.661316 17.9591 0 14.7226 0H5.43259C4.7733 0 4.23388 0.480957 4.11401 1.14227L0.218205 25.7913C0.15827 26.2723 0.517882 26.6931 0.997366 26.6931H6.75117L6.33162 29.2181C6.27168 29.639 6.57136 29.9997 7.05084 29.9997H11.9056C12.505 29.9997 12.9844 29.5789 13.0444 29.0378L14.0633 22.6651C14.1232 22.124 14.6626 21.7032 15.2021 21.7032H15.9213C20.5962 21.7032 24.3122 19.7794 25.3911 14.2484C25.8106 11.9638 25.6308 9.97986 24.4321 8.65723C24.0725 8.23639 23.653 7.93579 23.1135 7.63519Z" fill="#009CDE"/>
+                <path d="M23.1135 7.63519C23.4731 5.29053 23.1135 3.72742 21.8549 2.28455C20.4764 0.661316 17.9591 0 14.7226 0H5.43259C4.7733 0 4.23388 0.480957 4.11401 1.14227L0.218205 25.7913C0.15827 26.2723 0.517882 26.6931 0.997365 26.6931H6.75116L8.12968 17.7954C8.24955 17.1341 8.78897 16.6531 9.44826 16.6531H12.2053C17.5995 16.6531 21.795 14.4888 22.9937 8.11615C23.0536 7.99591 23.0536 7.81555 23.1135 7.63519Z" fill="#012169"/>
+                <path d="M9.74794 7.69531C9.80787 7.27447 10.3473 6.7334 10.8867 6.7334H18.1988C19.0379 6.7334 19.877 6.79352 20.5962 6.91376C21.2555 7.034 22.4542 7.33459 23.0536 7.69531C23.4132 5.35065 23.0536 3.78754 21.795 2.34467C20.4764 0.661316 17.9591 0 14.7226 0H5.43259C4.7733 0 4.23388 0.480957 4.11401 1.14227L0.218205 25.7913C0.15827 26.2723 0.517882 26.6931 0.997366 26.6931H6.75117L9.74794 7.69531Z" fill="#003087"/>
+                </svg>
+                
         </div>
-    </div>
-</section>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          
-            <h5 class="modal-title" id="exampleModalLabel">Confirm Your Display Name!</h5>
-     
-        <p>Are you sure that <span>“Ahmed Al-Azaiza”</span> is the name you want on the card?</p>
+        
+        <div class="cash-on-delivery">
+            <div class="pay-pal">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Cash on Delivery
+                    </label>
+                  </div>
+        
+                 
+            </div>
+            
+                
         </div>
-        <div class="modal-body">
-          <img src="./images/payment-img-1.png" alt="">
+        
+        <h2 class="form-pay-title">Shipping Address</h2>
+        
+        
+        <div class="input-pay bg-form">
+            <label>Street Name</label>
+            <input type="text" class="form-control">
         </div>
-        <div class="modal-footer">
-          <a href="/payment.html" class="btn-confirm">Confirm and Continue
+        
+        <div class="user-details">
+            <div class="input-pay bg-form">
+        <label >Country</label>
+        <input type="text" class="form-control">
+            </div>
+        <div class="input-pay bg-form">
+        <label >City</label>
+        <input type="text" class="form-control">
+        </div>
+        </div>
+        
+        <div class="user-details">
+            <div class="input-pay bg-form">
+        <label >Building Name</label>
+        <input type="text" class="form-control">
+            </div>
+        <div class="input-pay bg-form">
+        <label >Flat Number</label>
+        <input type="text" class="form-control">
+        </div>
+        </div>
+        <a class="btn-form-payment" href="/congratulation.html">
+            Pay $50
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 11.7256C4 11.3459 4.28215 11.0321 4.64823 10.9824L4.75 10.9756H19.75C20.1642 10.9756 20.5 11.3114 20.5 11.7256C20.5 12.1053 20.2178 12.4191 19.8518 12.4687L19.75 12.4756L4.75 12.4756C4.33579 12.4756 4 12.1398 4 11.7256Z" fill="#151515" stroke="#151515"/>
                 <path d="M13.171 6.23271C12.8775 5.94045 12.8765 5.46558 13.1687 5.17206C13.4344 4.90522 13.851 4.88012 14.1451 5.09734L14.2294 5.16977L20.2794 11.1938C20.547 11.4603 20.5714 11.8784 20.3524 12.1724L20.2794 12.2567L14.2294 18.2817C13.9359 18.574 13.4611 18.573 13.1688 18.2795C12.9031 18.0127 12.8797 17.5959 13.0982 17.3028L13.171 17.2188L18.687 11.7249L13.171 6.23271Z" fill="#151515" stroke="#151515"/>
                 </svg>
                 
-          </a>
+            </a>
+        
+        </form>
         </div>
-      </div>
-    </div>
-  </div>
+</div>
+</section>
+
+
            
 
   

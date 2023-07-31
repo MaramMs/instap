@@ -403,10 +403,8 @@ form {
 }
 form .form-control,
 form .form-control:focus {
-  background: #101010;
-  padding: 17px 16px;
+  background: transparent;
   border-radius: 12px;
-  height: 54px;
   border: none;
   color: #fff;
   font-weight: 400;
@@ -492,11 +490,13 @@ footer {
 /* payment method page */
 .payment{
   padding: 60px 0px;
+  min-height: 676px;
 }
 .card-order{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  height: 676px;
 }
 .card-order-top{
   display: flex;
@@ -523,15 +523,14 @@ footer {
   background: #262628;
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
   padding:24px;
   border-radius: 8px;
   height: 74px;
 }
-.form-payment .form-control, .form-payment .form-control:focus{
+.form-control, .form-control:focus{
   padding: 0px;
   height: auto;
-  background: #262628;
+  background: transparent;
 }
 .form-label {
   margin: 0;
@@ -591,6 +590,251 @@ margin-left: 25px;
   border-radius: 16px;
   min-height: 676px;
 }
+.modal-content{
+  background: #262628;
+  padding: 34px;
+  min-height: 659px;
+  border-radius: 16px;
+  min-width: 718px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-header,.modal-footer{
+  border-bottom: none;
+  border-top: none;
+  width: 100%;
+}
+.modal-header {
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-header h5{
+  color: #E0E0E0;
+  font-weight: 900;
+  font-size: 44px;
+  font-family: 'Noto Serif JP';
+}
+.modal-header p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Product Sans';
+}
+.modal-header p > span{
+  font-weight: 700;
+}
+.modal-header-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-header-title p {
+  text-align: center;
+}
+.btn-confirm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #D6A345;
+  padding: 17px 40px;
+  height: 74px;
+  border: none;
+  border-radius: 8px;
+  color: #151515;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Proxima Nova';
+}
+.btn-confirm:hover{
+background: transparent;
+color: #D6A345;
+}
+/* payment form page style 3 step*/
+.section-pay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.pay{
+  background: #262628;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 16px;
+  min-height: 1058px;
+  /* min-width: 638px; */
+  
+}
+.pay-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+.pay-title{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.arrow {
+  background: #101010;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.arrow svg{
+  background-color: #262628;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.pay-title h1 ,.total-pay{
+  color: #E0E0E0;
+  font-size: 42px;
+  font-weight: 900;
+  font-family: 'Noto Serif JP';
+}
+.form-pay{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 496px;
+  /* min-width: 590px; */
+
+}
+.form-pay-title{
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Product Sans';
+}
+.bg-form
+{
+  background: #181818;
+  padding: 24px;
+  height: 74px;
+  border-radius: 8px;
+}
+.credit-visa
+{
+
+  display: flex;
+  justify-content: space-between;
+}
+.credit
+{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.credit p{
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Product Sans';
+}
+.input-pay{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.input-pay label{
+  color: #868686;
+  font-size: 14px;
+  font-family: 'Product Sans';
+  font-weight: 400;
+}
+.input-pay input{
+  border: none;
+  padding: 0px 0px 0px 8px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Product Sans';
+}
+.form-control:focus ,.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus{
+  box-shadow: none;
+}
+.user-details{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.paypal,.cash-on-delivery{
+  background-color: #181818;
+  padding: 24px;
+  height: 74px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 40%;
+}
+.form-check-label{
+  font-size: 16px;
+  font-family: 'Product Sans';
+  font-weight: 400;
+  color: #fff;
+}
+/* Conratulation page style */
+.conratulation .container{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-bottom: 20px;
+}
+.conratulation-items{
+background-color: #262628;
+min-height: 596px;
+min-width: 638px;
+max-width: 100%;
+padding: 24px;
+border-radius: 16px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 32px;
+align-items: center;
+}
+.conratulation-items h1{
+  color: #E0E0E0;
+  font-weight: 900;
+  font-size: 42px;
+  font-family: 'Noto Serif JP';
+}
+.conratulation-items p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+width: 542px;
+max-width: 100%;
+  font-family: 'Product Sans';
+  text-align: center;
+}
+.conratulation-items .input-pay{
+  width: 100%;
+}
+.conratulation-items .input-pay input {
+width: 100%;
+color: #fff;
+font-size: 16px;
+font-weight: 400;
+}
 @media (max-width: 575.98px) { 
     .navbar-light .navbar-toggler{
         background: #262628;
@@ -641,7 +885,9 @@ width: 100%;
 font-size: 16px;
 line-height: 2;
     }
-
+.conratulation-items{
+min-width: 300px;
+}
     .footer-items{
         column-gap: 20px;
         row-gap: 0px;

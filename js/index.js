@@ -144,3 +144,4 @@ const slideInterval = 2000;
 setInterval(() => {
   nextArrow.click();
 }, slideInterval);
+
