@@ -19,15 +19,18 @@
 
 <body>
     <div class="instap">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <img src="./images/logo.png" alt="logo" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="openSidebarBtn" class="navbar-toggler" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
@@ -52,9 +55,11 @@
                     <button class="  btn-login-reg">Login / Register</button>
                 </div>
             </div>
-        </nav>
+        </nav> 
 
 
+
+        
         <main>
             
             
@@ -434,6 +439,78 @@
             </div>
         </footer>
 
+        <nav class="navbar-fixed-bottom">
+            <div class="container">
+
+                    <ul class="navbar-bottom">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">
+                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="none" />
+                                    <path d="M16.668 31.246V27.6679C16.668 26.7613 17.4053 26.0247 18.3185 26.019H21.6717C22.589 26.019 23.3326 26.7572 23.3326 27.6679V31.2356C23.3326 32.022 23.9717 32.6611 24.7638 32.6668H27.0515C28.1199 32.6695 29.1455 32.2501 29.902 31.501C30.6585 30.7519 31.0837 29.7347 31.0837 28.6739V18.5103C31.0836 17.6534 30.7011 16.8407 30.039 16.2909L22.2671 10.1201C20.9086 9.04081 18.9683 9.07567 17.6499 10.2031L10.0452 16.2909C9.35186 16.8245 8.93747 17.6397 8.91699 18.5103V28.6636C8.91699 30.8745 10.7223 32.6668 12.9492 32.6668H15.1847C15.566 32.6696 15.9327 32.5211 16.2034 32.2543C16.4740 31.9876 16.6262 31.6246 16.6262 31.246H16.668" fill="#fff" />
+                                </svg>
+                                    
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="none" />
+                                <path d="M16.668 31.246V27.6679C16.668 26.7613 17.4053 26.0247 18.3185 26.019H21.6717C22.589 26.019 23.3326 26.7572 23.3326 27.6679V31.2356C23.3326 32.022 23.9717 32.6611 24.7638 32.6668H27.0515C28.1199 32.6695 29.1455 32.2501 29.902 31.501C30.6585 30.7519 31.0837 29.7347 31.0837 28.6739V18.5103C31.0836 17.6534 30.7011 16.8407 30.039 16.2909L22.2671 10.1201C20.9086 9.04081 18.9683 9.07567 17.6499 10.2031L10.0452 16.2909C9.35186 16.8245 8.93747 17.6397 8.91699 18.5103V28.6636C8.91699 30.8745 10.7223 32.6668 12.9492 32.6668H15.1847C15.566 32.6696 15.9327 32.5211 16.2034 32.2543C16.4740 31.9876 16.6262 31.6246 16.6262 31.246H16.668" fill="#fff" />
+                            </svg>
+                                                       
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">
+                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="none" />
+                                    <path d="M16.668 31.246V27.6679C16.668 26.7613 17.4053 26.0247 18.3185 26.019H21.6717C22.589 26.019 23.3326 26.7572 23.3326 27.6679V31.2356C23.3326 32.022 23.9717 32.6611 24.7638 32.6668H27.0515C28.1199 32.6695 29.1455 32.2501 29.902 31.501C30.6585 30.7519 31.0837 29.7347 31.0837 28.6739V18.5103C31.0836 17.6534 30.7011 16.8407 30.039 16.2909L22.2671 10.1201C20.9086 9.04081 18.9683 9.07567 17.6499 10.2031L10.0452 16.2909C9.35186 16.8245 8.93747 17.6397 8.91699 18.5103V28.6636C8.91699 30.8745 10.7223 32.6668 12.9492 32.6668H15.1847C15.566 32.6696 15.9327 32.5211 16.2034 32.2543C16.4740 31.9876 16.6262 31.6246 16.6262 31.246H16.668" fill="#fff" />
+                                </svg>
+                                
+                                
+                                    
+                            </a>                        
+                        </li>
+                      
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">
+                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="none" />
+                                    <path d="M16.668 31.246V27.6679C16.668 26.7613 17.4053 26.0247 18.3185 26.019H21.6717C22.589 26.019 23.3326 26.7572 23.3326 27.6679V31.2356C23.3326 32.022 23.9717 32.6611 24.7638 32.6668H27.0515C28.1199 32.6695 29.1455 32.2501 29.902 31.501C30.6585 30.7519 31.0837 29.7347 31.0837 28.6739V18.5103C31.0836 17.6534 30.7011 16.8407 30.039 16.2909L22.2671 10.1201C20.9086 9.04081 18.9683 9.07567 17.6499 10.2031L10.0452 16.2909C9.35186 16.8245 8.93747 17.6397 8.91699 18.5103V28.6636C8.91699 30.8745 10.7223 32.6668 12.9492 32.6668H15.1847C15.566 32.6696 15.9327 32.5211 16.2034 32.2543C16.4740 31.9876 16.6262 31.6246 16.6262 31.246H16.668" fill="#fff" />
+                                </svg>
+                                    
+                            </a>                       
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="sidebar" >
+            <div class="container">
+                <ul class="sidebar-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Why INSTAB?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Card Order Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Our Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Contact us</a>
+                    </li>
+                </ul>
+                <button class="btn-login-reg">Login / Register</button>
+            </div>
+        </div>
+
     </div>
 
 
@@ -447,6 +524,23 @@
     <script>
         AOS.init();
       </script>
+          <script>
+ 
+ const openSidebarBtn = document.getElementById('openSidebarBtn');
+const sidebar = document.getElementById('sidebar');
+            openSidebarBtn.addEventListener('click', function () {
+                if (sidebar.classList.contains('show')) {
+                    sidebar.classList.remove('show');
+                } else {
+                    sidebar.classList.add('show');
+                }
+            });
+
+
+
+
+
+        </script>
 </body>
 
 </html>
