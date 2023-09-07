@@ -1447,6 +1447,38 @@ font-weight: 700;
 .swiper2 .swiper-slide img{
   max-width: 100%;
 }
+
+/* .owl-carousel{
+  display: block;
+} */
+.owl-carousel {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.owl-carousel .item {
+  margin-right: 18px; /* Adjust the margin to your desired spacing */
+}
+
+.owl-carousel .item{
+  background-color: #0A0A0A;
+  border-radius: 16px;
+  padding: 32px 36px;
+}
+.owl-carousel .item img{
+  max-width: 100%;
+}
+/* .owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
 @media (max-width: 575.98px) {
   .navbar-light .navbar-toggler {
     background: #262628;
