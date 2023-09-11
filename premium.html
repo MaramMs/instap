@@ -16,7 +16,22 @@
       rel="stylesheet"
       href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
     />
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>INSTAP</title>
@@ -101,6 +116,30 @@
                 </li>
               </ul>
 
+  <!-- Add the mobile tab slider placeholder -->
+  <div class="owl-carousel owl-theme">
+    <div class="item mobile-item-tab">
+      <button class="nav-link active" type="button" data-bs-toggle="tab" data-bs-target="#free" role="tab" aria-controls="free" aria-selected="false">
+        Free
+      </button>
+    </div>
+    <div class="item mobile-item-tab">
+      <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#free" role="tab" aria-controls="free" aria-selected="false">
+        Free
+      </button>
+    </div>
+    <div class="item mobile-item-tab">
+      <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#free" role="tab" aria-controls="free" aria-selected="false">
+        Black and white
+      </button>
+    </div>
+    <div class="item mobile-item-tab">
+      <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#free" role="tab" aria-controls="free" aria-selected="false">
+        Free
+      </button>
+    </div>
+  </div>
+
               <select
                 class="form-select form-select-sm"
                 aria-label=".form-select-sm example"
@@ -111,6 +150,8 @@
                 <option value="3">Three</option>
               </select>
             </div>
+
+           
 
             <div class="tab-content p-5" id="myTabContent">
               <div
@@ -439,7 +480,14 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/index.js"></script>
     <script>
       AOS.init();
@@ -462,5 +510,59 @@
         });
       });
     </script>
+
+<script>
+  // Function to populate the mobile tab slider
+  function populateMobileTabSlider(tabId) {
+    const carouselInner = document.querySelector("#mobileTabSlider .carousel-inner");
+    carouselInner.innerHTML = ""; // Clear existing content
+
+    const tabContent = document.querySelector(tabId);
+    const clone = tabContent.cloneNode(true);
+
+    // Add each cloned tab pane as a slide
+    clone.querySelectorAll(".tab-pane").forEach((pane, index) => {
+      const carouselItem = document.createElement("div");
+      carouselItem.classList.add("carousel-item");
+
+      // Set the first slide as active
+      if (index === 0) {
+        carouselItem.classList.add("active");
+      }
+
+      carouselItem.appendChild(pane);
+      carouselInner.appendChild(carouselItem);
+    });
+
+    // Initialize the Bootstrap Carousel
+    const mobileTabSlider = new bootstrap.Carousel(document.querySelector("#mobileTabSlider"), {
+      interval: false, // Disable automatic sliding
+    });
+  }
+
+  // Event listener for tab button clicks
+  document.querySelectorAll(".nav-link").forEach((tabButton) => {
+    tabButton.addEventListener("click", (event) => {
+      const tabId = event.target.getAttribute("data-bs-target");
+      populateMobileTabSlider(tabId);
+    });
+  });
+</script>
+<script>
+
+   
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    // items: 'auto', // Adjust to 'auto' to let Owl Carousel handle the number of items
+    loop: true,
+    // autoplay: true,
+    autoplayTimeout: 3000,
+    responsiveClass: true,
+    dots: false,
+  });
+});
+  
+  </script>
+
   </body>
 </html>
