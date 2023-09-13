@@ -37,10 +37,13 @@
                 <a class="navbar-brand" href="/">
                     <img src="./images/logo.png" alt="logo" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="openSidebarBtn" class="navbar-toggler" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
@@ -302,6 +305,32 @@
                 </div>
             </div>
         </footer>
+
+        <div id="sidebar" >
+            <div class="container">
+                <ul class="sidebar-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Why INSTAB?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Card Order Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Our Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Contact us</a>
+                    </li>
+                </ul>
+                <button class="btn-login-reg">Login / Register</button>
+            </div>
+        </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
@@ -345,5 +374,22 @@ $(document).ready(function(){
 </script>
 
 <script src="/js/shop.js"></script>
+<script>
+ 
+    const openSidebarBtn = document.getElementById('openSidebarBtn');
+   const sidebar = document.getElementById('sidebar');
+               openSidebarBtn.addEventListener('click', function () {
+                   if (sidebar.classList.contains('show')) {
+                       sidebar.classList.remove('show');
+                   } else {
+                       sidebar.classList.add('show');
+                   }
+               });
+   
+   
+   
+   
+   
+           </script>
 </body>
 </html>

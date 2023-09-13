@@ -1287,7 +1287,7 @@ font-weight: 900;
 .owl-carousel::-webkit-scrollbar {
   display: none;
 }
-.owl-carousel.owl-drag .owl-item {
+.owl-carousel.mobile-carousel.owl-drag .owl-item {
   width:max-content !important;
 }
 /* Highlight active button if needed */ */
@@ -1515,18 +1515,18 @@ font-weight: 700;
 }
 
 @media (max-width: 575.98px) {
-  #sidebar{
-    display: block;
-  }
-
+ 
   #openSidebarBtn {
     transition: all 0.3s ease-in-out;
   }
   
   #sidebar {
+    display: block;
+
     background-color: #101010;
     height: 100%;
     top: 0;
+    z-index: 999;
     left: -250px; 
     position: fixed;
     width: 250px;
