@@ -1280,7 +1280,9 @@ font-weight: 900;
   overflow-x: scroll; /* Enable horizontal scrolling */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
 }
-
+.owl-carousel.mobile-carousel{
+  display: none;
+}
 /* Hide scroll bar */
 .owl-carousel::-webkit-scrollbar {
   display: none;
@@ -1296,23 +1298,18 @@ font-weight: 900;
   font-weight: 900;
 } */
 
-/* .nav-tabs .nav-link,.owl-carousel .item.tab-mobile, .owl-carousel .item.tab-mobile button {
-  padding: 0px 8px 8px 8px;
+.nav-tabs .nav-link{
+  padding: 0px 8px 8px 8px !important;
   border-radius: 4px;
-  color: #fff;
+  color: #fff !important;
   font-size: 34px;
   font-weight: 400;
   background: transparent;
   border: none;
   width: auto !important;
 }
-.owl-carousel{
-  display: none;
-}
-.owl-carousel.owl-drag .owl-item.active ,.owl-carousel.owl-drag .owl-item{
-  width: auto !important;
-}
-.nav-tabs .nav-link.active ,.owl-carousel .item.tab-mobile button{
+
+.nav-tabs .nav-link.active{
   border: none;
   border-bottom: 3px solid #ca963c;
   padding: 0px 16px 8px 16px;
@@ -1321,7 +1318,7 @@ font-weight: 900;
   color: #fff;
   font-size: 44px;
   font-weight: 900;
-} */
+}
 
 .premium-free-card {
   background-color: #0a0a0a;
@@ -1737,7 +1734,7 @@ font-size: 10px;
     min-height: 50px;
     font-size: 20px;
   }
-  .owl-carousel{
+  .owl-carousel.mobile-carousel{
     display: block;
   }
   .nav.nav-tabs{
