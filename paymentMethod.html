@@ -22,12 +22,22 @@
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <a class="navbar-brand" href="/">
-                    <img src="./images/logo.png" alt="logo" />
+                    <img src="./images/logo.png" alt="logo"  class="logo-web"/>
+                    <img src="./images/logo-mobile.svg" alt="logo" class="logo-mobile">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              <div class="res-menu">
+                <button class="btn-login-reg mobile">Login / Register</button>
+                <button id="openSidebarBtn" class="navbar-toggler" type="button">
+                    <img src="./images/menu-logo.svg" alt="">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+              </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
@@ -67,6 +77,11 @@
 
         </div>
 
+       <div class="img-order-container d-block d-md-none">
+        <img src="./images/payment-img-1.png" alt="">
+
+       </div>
+
         <form class="form-payment">
             <div class="mb-3">
                 <div class="payment-input-item">
@@ -94,7 +109,7 @@
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
 
-            <div class="mb-3 upload">
+            <div class="mb-3 upload d-none">
                 <div class="upload-img">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5C0 5.51088 0.790177 3.60322 2.1967 2.1967C3.60322 0.790177 5.51088 0 7.5 0H42.5C44.4891 0 46.3968 0.790177 47.8033 2.1967C49.2098 3.60322 50 5.51088 50 7.5V23.75C49.9998 23.9609 49.9729 24.1709 49.92 24.375C49.9729 24.5791 49.9998 24.7891 50 25V42.5C50 44.4891 49.2098 46.3968 47.8033 47.8033C46.3968 49.2098 44.4891 50 42.5 50H7.5C5.51088 50 3.60322 49.2098 2.1967 47.8033C0.790177 46.3968 0 44.4891 0 42.5V35C0.000200739 34.7891 0.027081 34.5791 0.0800002 34.375C0.0271336 34.1709 0.000254203 33.9609 0 33.75V7.5ZM7.485 32.075C6.615 32.09 5.785 32.13 5 32.19V7.5C5 6.83696 5.26339 6.20107 5.73223 5.73223C6.20107 5.26339 6.83696 5 7.5 5H42.5C43.163 5 43.7989 5.26339 44.2678 5.73223C44.7366 6.20107 45 6.83696 45 7.5V22.54C34.2575 22.8875 26.5 25.475 21.05 29.0975C23.115 29.83 25.425 30.8725 27.69 32.2375C31.1875 34.3375 34.7425 37.2875 37.135 41.195C37.3064 41.475 37.4209 41.7861 37.4721 42.1104C37.5232 42.4347 37.51 42.7659 37.4332 43.0851C37.3563 43.4043 37.2174 43.7053 37.0242 43.9708C36.8311 44.2363 36.5875 44.4611 36.3075 44.6325C36.0275 44.8039 35.7164 44.9184 35.3921 44.9696C35.0678 45.0207 34.7366 45.0075 34.4174 44.9307C34.0982 44.8538 33.7972 44.7149 33.5317 44.5217C33.2662 44.3286 33.0414 44.085 32.87 43.805C31.03 40.7975 28.175 38.36 25.115 36.5225C22.06 34.6875 18.9525 33.5425 16.7975 33.0425C13.7618 32.3492 10.6534 32.0252 7.54 32.0775H7.485V32.075ZM12.445 11.22C13.5593 10.4349 14.8869 10.0092 16.25 10C17.275 10 18.7575 10.2875 20.055 11.22C21.48 12.245 22.5 13.935 22.5 16.25C22.5 18.565 21.48 20.2525 20.055 21.2775C18.941 22.0635 17.6133 22.49 16.25 22.5C15.225 22.5 13.7425 22.2125 12.445 21.2775C11.02 20.2525 10 18.5675 10 16.25C10 13.935 11.02 12.2475 12.445 11.22Z" fill="white"/>
@@ -120,7 +135,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-<div class="card-images">
+<div class="card-images d-none d-md-block">
     <img src="./images/payment-img-1.png" alt="">
     <img src="./images/paymment-img-2.png" alt="">
 </div>
@@ -169,7 +184,7 @@
 
 
      
-        <footer>
+        <footer class="d-none d-md-block">
             <div class="container">
                 <div class="row g-5 ">
                     <div class="col ">
@@ -258,12 +273,54 @@
             </div>
         </footer>
 
+        <div id="sidebar" >
+            <div class="container">
+                <ul class="sidebar-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Why INSTAB?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Card Order Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Our Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Contact us</a>
+                    </li>
+                </ul>
+                <!-- <button class="btn-login-reg">Login / Register</button> -->
+            </div>
+        </div>
+
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
+<script>
+ 
+    const openSidebarBtn = document.getElementById('openSidebarBtn');
+   const sidebar = document.getElementById('sidebar');
+               openSidebarBtn.addEventListener('click', function () {
+                   if (sidebar.classList.contains('show')) {
+                       sidebar.classList.remove('show');
+                   } else {
+                       sidebar.classList.add('show');
+                   }
+               });
+   
+   
+   
+   
+   
+           </script>
   
 </body>
 
