@@ -1457,6 +1457,11 @@ font-weight: 700;
   justify-content: center;
   align-items: center;
 }
+.active-slide{
+  background-color:#3C4045;
+  border-radius: 26px;
+  padding: 10px;
+}
 
 .swiper-slide img {
   max-width: 100%;

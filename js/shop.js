@@ -24,57 +24,51 @@ const decrementButton = document.getElementById('decrement');
     });
 
 // slider function 
-        document.addEventListener('DOMContentLoaded', function () {
-            const swiper = new Swiper('.swiper', {
-                // Optional parameters
-                centeredSlides: true,
+
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper', {
+        centeredSlides: true,
+        slidesPerView: 2,
+        spaceBetween: 16,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            1024: {
                 slidesPerView: 'auto',
                 spaceBetween: 50,
-                loop: true,
-             
-            });
-        
-         // Function to apply styles to the active slide
-function setActiveSlideStyles() {
-    // Remove the box shadow and background color from all slides
-    document.querySelectorAll('.swiper-slide').forEach(slide => {
-        slide.style.boxShadow = 'none';
-        slide.style.backgroundColor = '';
+            },
+        },
     });
 
-    // Apply the desired background color and box shadow to the active slide
-    const activeSlide = swiper.slides[swiper.activeIndex];
-    activeSlide.style.backgroundColor = '#3C4045';
-    activeSlide.style.borderRadius='50px';
-    activeSlide.style.padding='10px'
-    activeSlide.style.boxShadow = '0px 17.48385238647461px 13.987080574035645px 0px #00000011';
-
-    // Add this line to apply the desired box-shadow to the active slide
-    activeSlide.style.boxShadow = '0px 2.1660828590393066px 1.7328662872314453px 0px #00000008, 0px 5.2053985595703125px 4.164319038391113px 0px #0000000B, 0px 9.80130386352539px 7.841042518615723px 0px #0000000E, 0px 17.48385238647461px 13.987080574035645px 0px #00000011';
-
-    // Center the active slide by adjusting the Swiper container's transform
-    const containerWidth = swiper.container.offsetWidth;
-    const activeSlideWidth = activeSlide.offsetWidth;
-    const translateX = (containerWidth - activeSlideWidth) / 2;
-    swiper.wrapper.style.transform = `translate3d(${translateX}px, 0, 0)`;
-}
-
-        
-            // Initialize the styles for the active slide
-            setActiveSlideStyles();
-        
-            // Add an event listener for the slide change event
-            swiper.on('slideChange', setActiveSlideStyles);
+    // Add an event listener for the slide change event
+    swiper.on('slideChange', function () {
+        // Remove the style from all slides
+        const slides = document.querySelectorAll('.swiper-slide');
+        slides.forEach(slide => {
+            slide.classList.remove('active-slide');
         });
+
+        // Add a style to the active slide
+        const activeSlide = slides[swiper.activeIndex];
+        activeSlide.classList.add('active-slide');
+    });
+});
+
+        
         
 
 
-    // const swiper = new Swiper('.swiper2', {
-    //     slidesPerView: 'auto',
-    //     spaceBetween: 18, 
-    //     loop: true,
-      
-    // });
 
         let swiper = null;
     

@@ -39,50 +39,50 @@
 
   <body>
     <div class="instap">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-          <a class="navbar-brand" href="/">
-            <img src="./images/logo.png" alt="logo" />
-          </a>
-          <button id="openSidebarBtn" class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-          <!-- <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">Why INSTAB?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">Card Order Steps</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">Our Cards</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">Contact us</a>
-              </li>
-            </ul>
-            <button class="btn-login-reg">Login / Register</button>
+            <a class="navbar-brand" href="/">
+                <img src="./images/logo.png" alt="logo"  class="logo-web"/>
+                <img src="./images/logo-mobile.svg" alt="logo" class="logo-mobile">
+            </a>
+          <div class="res-menu">
+            <button class="btn-login-reg mobile">Login / Register</button>
+            <button id="openSidebarBtn" class="navbar-toggler" type="button">
+                <img src="./images/menu-logo.svg" alt="">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
           </div>
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Why INSTAB?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Card Order Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Our Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Contact us</a>
+                    </li>
+                </ul>
+                <button class="  btn-login-reg">Login / Register</button>
+            </div>
         </div>
-      </nav>
+    </nav>
 
       <main>
         <section>
@@ -143,7 +143,7 @@
     </div>
   </div>
 
-              <select
+              <!-- <select
                 class="form-select form-select-sm"
                 aria-label=".form-select-sm example"
               >
@@ -151,19 +151,19 @@
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
-              </select>
+              </select> -->
             </div>
 
            
 
-            <div class="tab-content p-5" id="myTabContent">
+            <div class="tab-content md:p-5 p-3" id="myTabContent">
               <div
                 class="tab-pane fade show active"
                 id="premium"
                 role="tabpanel"
                 aria-labelledby="premium-tab"
               >
-                <div class="row g-3">
+                <!-- <div class="row g-3">
                   <div class="col-12 col-md-6">
                     <div
                       class="premium-free-card"
@@ -254,7 +254,154 @@
                       <img src="./images/card-item.png" alt="" />
                     </div>
                   </div>
-                </div>
+                </div> -->
+
+                <div class="row gy-3">
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style ">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+                  <div class="col-6 col-card">
+                    <div class="similar-img-container">
+                        <img src="./images/card-item.png" alt="">
+                        <div class="card-img-style">
+                            <h3>Style 1</h3>
+                            <span>90 AED</span>
+                        </div>
+    
+                    </div>
+                    <div class="img-color-card">
+                        <img src="./images/img-color1.svg" alt="">
+                        <img src="./images/img-color2.svg" alt="">
+                        <img src="./images/img-color3.svg" alt="">
+                        <img src="./images/img-color4.svg" alt="">
+                        <img src="./images/img-color5.svg" alt="">
+                    </div>
+                 <p class="card-category">Business</p>
+                  </div>
+            </div>
               </div>
               <div
                 class="tab-pane fade"
@@ -499,7 +646,7 @@
                     <a class="nav-link" href="/">Contact us</a>
                 </li>
             </ul>
-            <button class="btn-login-reg">Login / Register</button>
+            <!-- <button class="btn-login-reg">Login / Register</button> -->
         </div>
     </div>
     </div>
@@ -609,5 +756,6 @@ $(document).ready(function(){
    
    
            </script>
+           
   </body>
 </html>
